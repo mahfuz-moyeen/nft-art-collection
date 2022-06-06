@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <Menubar />
-      <Sidebar />
+      {/* <Sidebar /> */}
       <Routes>
         <Route path="/" element={<Dashboard />} />
       </Routes>
