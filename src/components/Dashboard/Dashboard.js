@@ -1,8 +1,9 @@
 import React from 'react';
-import nftRobot from '../../Image/nft_robot.jpg'
+import nftRobot from '../../Image/nft_robort.jpg'
 import { StarIcon } from '@heroicons/react/solid'
 import Time from './Time';
 import TopCreators from './TopCreators';
+import ArtCart from './ArtCart';
 
 const Dashboard = () => {
     return (
@@ -59,7 +60,11 @@ const Dashboard = () => {
                     {/* top creators */}
                     <TopCreators />
 
+
                 </div>
+                {/* other art cart  */}
+                <ArtCart />
+
             </div>
 
 

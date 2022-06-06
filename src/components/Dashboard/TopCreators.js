@@ -47,7 +47,7 @@ const TopCreators = () => {
                 </div>
 
                 {
-                    creater.map(person => <>
+                    creater.map(person => <div key={person.id}>
                         <div className='flex justify-between'>
                             <div className='flex gap-1'>
                                 <div class="avatar">
@@ -67,7 +67,7 @@ const TopCreators = () => {
                             }
                         </div>
                         <hr/>
-                    </>)
+                    </div>)
                 }
 
 
