@@ -43,7 +43,7 @@ const TopCreators = () => {
             <div class="card-body">
                 <div className='flex justify-between'>
                     <h2 class="card-title">Top Creators</h2>
-                    <p>Weekly</p>
+                    <h3>Weekly</h3>
                 </div>
 
                 {

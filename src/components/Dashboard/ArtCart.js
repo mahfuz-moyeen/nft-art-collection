@@ -1,5 +1,6 @@
 import { HeartIcon } from '@heroicons/react/solid';
 import React from 'react';
+import History from './History';
 
 const ArtCart = () => {
 
@@ -49,6 +50,8 @@ const ArtCart = () => {
                     </div>
                 </div>)
             }
+
+            <History/>
         </div>
     );
 };

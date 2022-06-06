@@ -6,6 +6,7 @@ import TopCreators from './TopCreators';
 import ArtCart from './ArtCart';
 
 const Dashboard = () => {
+    
     return (
         <div class="drawer drawer-mobile">
             <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
@@ -13,7 +14,7 @@ const Dashboard = () => {
                 {/* <!-- Page content here --> */}
                 <label for="my-drawer-2" class="btn btn-primary drawer-button lg:hidden">Open drawer</label>
 
-                <div className='w-10/12 mx-auto flex justify-between gap-3'>
+                <div className='w-10/12 mx-auto flex justify-between gap-3 mt-80 relative'>
 
                     {/* center conten  */}
                     <div className='w-10/12'>
