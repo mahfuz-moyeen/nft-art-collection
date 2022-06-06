@@ -5,6 +5,7 @@ import Time from './Time';
 import TopCreators from './TopCreators';
 import ArtCart from './ArtCart';
 import Sidebar from '../Sidebar/Sidebar';
+import bighead from '../../Image/user/bighead-10.svg';
 
 const Dashboard = () => {
 
@@ -15,7 +16,7 @@ const Dashboard = () => {
             <div className="">
                 <div className='w-10/12 mx-auto flex flex-col lg:flex-row justify-between gap-3'>
 
-                    {/* center conten  */}
+                    {/* center section */}
                     <div className='w-10/12 lg:w-11/12 ml-16 lg:mx-auto'>
                         <div className="card bg-secondary lg:card-side shadow-xl">
                             <figure><img className='h-full p-2 rounded' src={nftRobot} alt="Album" /></figure>
@@ -23,14 +24,14 @@ const Dashboard = () => {
                                 <div>
                                     <h2 className="text-2xl lg:text-4xl py-2 font-semibold text-white">Sculpture of Human <br />
                                         Face In a Pop Art style</h2>
-                                    <p className='p-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum cupiditate soluta labore aliquid vel, assumenda illum fuga in non aut fugit aliquam itaque, </p>
+                                    <p className='p-2'>This gallery includes representations, ideas and obsessions of how the human body was depicted throughout ancient history. The use of symmetry, balance, harmony and movement will be explored in ancient sculptures.</p>
                                 </div>
 
                                 {/* post user id rating  */}
                                 <div className='flex gap-2 py-5 items-center'>
                                     <div className="avatar">
-                                        <div className="w-16 rounded">
-                                            <img src="https://api.lorem.space/image/face?hash=92048" />
+                                        <div className="w-16 rounded-full">
+                                            <img src={bighead} className='bg-white'/>
                                         </div>
                                     </div>
                                     <div>

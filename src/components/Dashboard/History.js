@@ -19,7 +19,7 @@ const History = () => {
         }
     ]
     return (
-        <div className="card ml-1 max-w-sm mx-auto  lg:max-w-md bg-secondary shadow-xl">
+        <div className="card ml-1 w-10/12 mx-auto  lg:max-w-md bg-secondary shadow-xl">
             <div className="card-body">
                 <div className='flex flex-row justify-between'>
                     <h2 className="card-title">History</h2>

@@ -32,7 +32,7 @@ const ArtCart = () => {
     ]
 
     return (
-        <div className='grid grid-cols-1 lg:grid-cols-4 lg:gap-1 gap-4 w-10/12 ml-24 lg:mx-auto my-5'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-1 gap-4 w-10/12 ml-24 lg:mx-auto my-5'>
             {
                 arts.map(art => <div
                     key={art.id}
