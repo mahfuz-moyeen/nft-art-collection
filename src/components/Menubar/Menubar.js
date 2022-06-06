@@ -4,24 +4,27 @@ import { NavLink } from 'react-router-dom';
 const Menubar = () => {
 
     const menuItem = <>
-        <li><NavLink to='collectibles'>Collectibles</NavLink></li>
-        <li><NavLink to='art'>Art</NavLink></li>
-        <li><NavLink to='Sports'>Sports</NavLink></li>
-        <li><NavLink to='gaming'>Gaming</NavLink></li>
+        <li className='bg-secondary rounded-lg'><NavLink to='collectibles'>Collectibles</NavLink></li>
+        <li className='bg-secondary rounded-lg'><NavLink to='art'>Art</NavLink></li>
+        <li className='bg-secondary rounded-lg'><NavLink to='Sports'>Sports</NavLink></li>
+        <li className='bg-secondary rounded-lg'><NavLink to='gaming'>Gaming</NavLink></li>
     </>
 
     return (
         <div class="navbar bg-base-100 w-11/12 mx-auto">
-            <div class="navbar-start justify-center">
-                <div class="form-control">
-                    <input type="text" placeholder="Search" class="input input-bordered" />
+            <div class="navbar-start lg:justify-center">
+                <div class="form-control hidden lg:block">
+                    <input type="text" placeholder="Search" class="input input-bordered bg-secondary" />
                 </div>
 
                 <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
-                    <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                    <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 gap-3 bg-secondary">
+                    <div class="form-control lg:hidden">
+                        <input type="text" placeholder="Search" class="input input-bordered bg-secondary" />
+                    </div>
                         {menuItem}
                     </ul>
                 </div>
@@ -37,9 +40,9 @@ const Menubar = () => {
             <div class="navbar-end gap-3">
 
                 {/* ETH  */}
-                        <div className='border-2 border-violet-900 rounded-md p-2'>
-                           <h1>1.42ETH</h1>
-                        </div>
+                <div className='border-2 border-violet-900 rounded-md p-2'>
+                    <h1>1.42ETH</h1>
+                </div>
 
                 {/* message  */}
                 <div class="dropdown dropdown-end">
