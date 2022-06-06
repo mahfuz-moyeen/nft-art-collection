@@ -1,7 +1,7 @@
 import React from 'react';
 
 const TopCreators = () => {
-    const creater = [
+    const creator = [
         {
             id: 1,
             name: "Riadul Raq",
@@ -39,19 +39,19 @@ const TopCreators = () => {
         },
     ]
     return (
-        <div class="card max-w-sm mx-auto lg:max-w-md bg-secondary shadow-xl">
-            <div class="card-body">
+        <div className="card w-10/12 ml-16 lg:w-4/12 lg:mx-auto bg-secondary shadow-xl">
+            <div className="card-body">
                 <div className='flex justify-between'>
-                    <h2 class="card-title">Top Creators</h2>
+                    <h2 className="card-title">Top Creators</h2>
                     <h3>Weekly</h3>
                 </div>
 
                 {
-                    creater.map(person => <div key={person.id}>
+                    creator.map(person => <div key={person.id}>
                         <div className='flex justify-between'>
                             <div className='flex gap-1'>
-                                <div class="avatar">
-                                    <div class="w-16 rounded-full">
+                                <div className="avatar">
+                                    <div className="w-16 rounded-full">
                                         <img src="https://api.lorem.space/image/face?hash=92310" />
                                     </div>
                                 </div>

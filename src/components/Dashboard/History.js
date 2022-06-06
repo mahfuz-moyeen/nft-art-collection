@@ -16,10 +16,10 @@ const History = () => {
         }
     ]
     return (
-        <div class="card max-w-sm mx-auto lg:max-w-md bg-secondary shadow-xl">
-            <div class="card-body">
+        <div className="card ml-1 max-w-sm mx-auto  lg:max-w-md bg-secondary shadow-xl">
+            <div className="card-body">
                 <div className='flex flex-row justify-between'>
-                    <h2 class="card-title">History</h2>
+                    <h2 className="card-title">History</h2>
                     <h3>Monthly</h3>
                 </div>
 
@@ -27,8 +27,8 @@ const History = () => {
                     histories.map(history => <div key={history.id}>
                         <div className='flex justify-between'>
                             <div className='flex gap-1'>
-                                <div class="avatar">
-                                    <div class="w-16 rounded-full">
+                                <div className="avatar">
+                                    <div className="w-16 rounded-full">
                                         <img src="https://api.lorem.space/image/face?hash=92310" />
                                     </div>
                                 </div>

@@ -2,19 +2,19 @@ import React from 'react';
 
 const Sidebar = () => {
     return (
-        <div class="drawer drawer-mobile">
-            <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
-            <div class="drawer-content flex flex-col items-center justify-center">
+        <div className="drawer drawer-mobile">
+            <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
+            <div className="drawer-content flex flex-col items-center justify-center">
                 {/* <!-- Page content here --> */}
-                <label for="my-drawer-2" class="btn btn-primary drawer-button lg:hidden">Open drawer</label>
+                <label for="my-drawer-2" className="btn btn-primary drawer-button lg:hidden">Open drawer</label>
 
                 
             </div>
 
 
-            <div class="drawer-side">
-                <label for="my-drawer-2" class="drawer-overlay"></label>
-                <ul style={{ height: '95vh' }} class="menu rounded-xl p-1 py-2 lg:mx-5 overflow-y-auto bg-secondary lg:fixed lg:top-0 lg:my-5 w-20 flex-col items-center justify-between">
+            <div className="drawer-side">
+                <label for="my-drawer-2" className="drawer-overlay"></label>
+                <ul style={{ height: '95vh' }} className="menu rounded-xl p-1 py-2 lg:mx-5 overflow-y-auto bg-secondary lg:fixed lg:top-0 lg:my-5 w-20 flex-col items-center justify-between">
                     {/* icon */}
                     <div>
                         <svg className='w-16 h-16 fill-violet-600' width="113" height="113" viewBox="0 0 113 113" fill="none" xmlns="http://www.w3.org/2000/svg">

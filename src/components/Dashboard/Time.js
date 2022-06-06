@@ -32,9 +32,9 @@ const Time = () => {
 
 
     return (
-        <div class="stats stats-vertical lg:stats-horizontal shadow bg-base-100">
+        <div className="stats stats-vertical lg:stats-horizontal shadow bg-base-100">
 
-            <div class="stat">
+            <div className="stat">
                 <h1>Auction Ending In</h1>
                 <div className="grid grid-flow-col gap-5 text-center auto-cols-max justify-center">
 
@@ -42,24 +42,24 @@ const Time = () => {
                         <span style={{ value: value }}></span>
                     </span>
                     <div className="flex flex-col">
-                        <Countdown className="font-mono text-5xl" value={hour} />
+                        <Countdown className="font-mono text-3xl lg:text-5xl" value={hour} />
                         hours
                     </div>
                     <div className="flex flex-col">
-                        <Countdown className="font-mono text-5xl" value={min} />
+                        <Countdown className="font-mono text-3xl lg:text-5xl" value={min} />
                         min
                     </div>
                     <div className="flex flex-col">
-                        <Countdown className="font-mono text-5xl" value={value} />
+                        <Countdown className="font-mono text-3xl lg:text-5xl" value={value} />
                         sec
                     </div>
                 </div>
             </div>
 
-            <div class="stat">
-                <div class="stat-title">Current Bid</div>
-                <div class="stat-value">1.990 ETH</div>
-                <div class="stat-desc">$55,000.99</div>
+            <div className="stat">
+                <div className="stat-title">Current Bid</div>
+                <div className="stat-value text-3xl lg:text-5xl">1.990 ETH</div>
+                <div className="stat-desc">$55,000.99</div>
             </div>
 
         </div>
