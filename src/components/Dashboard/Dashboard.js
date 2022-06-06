@@ -2,6 +2,7 @@ import React from 'react';
 import nftRobot from '../../Image/nft_robot.jpg'
 import { StarIcon } from '@heroicons/react/solid'
 import Time from './Time';
+import TopCreators from './TopCreators';
 
 const Dashboard = () => {
     return (
@@ -12,50 +13,51 @@ const Dashboard = () => {
                 <label for="my-drawer-2" class="btn btn-primary drawer-button lg:hidden">Open drawer</label>
 
                 <div className='w-10/12 mx-auto flex justify-between gap-3'>
-                    <div class="card bg-secondary lg:card-side bg-base-100 shadow-xl">
-                        <figure><img src={nftRobot} alt="Album" /></figure>
-                        <div class="card-body">
-                            <h2 class="text-3xl font-semibold text-white">Sculpture of Human <br />
-                                Face In a Pop Art style</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum cupiditate soluta labore aliquid vel, assumenda illum fuga in non aut fugit aliquam itaque, est ullam animi dolorum consequuntur </p>
 
-                            {/* post user id rating  */}
-                            <div className='flex gap-2 items-center'>
-                                <div class="avatar">
-                                    <div class="w-16 rounded">
-                                        <img src="https://api.lorem.space/image/face?hash=92048" />
-                                    </div>
-                                </div>
+                    {/* center conten  */}
+                    <div className='w-10/12'>
+                        <div class="card bg-secondary lg:card-side bg-base-100 shadow-xl">
+                            <figure><img className='h-full p-2 rounded' src={nftRobot} alt="Album" /></figure>
+                            <div class="card-body">
                                 <div>
-                                    <h2>Abid Hasan Jibon</h2>
-                                    <div className='flex gap-2'>
-                                        <StarIcon className="h-5 w-5 text-blue-500" />
-                                        <StarIcon className="h-5 w-5 text-blue-500" />
-                                        <StarIcon className="h-5 w-5 text-blue-500" />
-                                        <StarIcon className="h-5 w-5 text-blue-500" />
-                                        <StarIcon className="h-5 w-5 text-blue-500" />
+                                    <h2 class="text-2xl lg:text-4xl py-2 font-semibold text-white">Sculpture of Human <br />
+                                        Face In a Pop Art style</h2>
+                                    <p className='p-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum cupiditate soluta labore aliquid vel, assumenda illum fuga in non aut fugit aliquam itaque, est ullam animi dolorum consequuntur </p>
+                                </div>
+
+                                {/* post user id rating  */}
+                                <div className='flex gap-2 py-5 items-center'>
+                                    <div class="avatar">
+                                        <div class="w-16 rounded">
+                                            <img src="https://api.lorem.space/image/face?hash=92048" />
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h2>Abid Hasan Jibon</h2>
+                                        <div className='flex gap-2'>
+                                            <StarIcon className="h-5 w-5 text-blue-500" />
+                                            <StarIcon className="h-5 w-5 text-blue-500" />
+                                            <StarIcon className="h-5 w-5 text-blue-500" />
+                                            <StarIcon className="h-5 w-5 text-blue-500" />
+                                            <StarIcon className="h-5 w-5 text-blue-500" />
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            {/* time */}
-                            <Time />
-                            <div className='flex justify-evenly'>
-                                <button className='btn btn-primary'>View Artwork</button>
-                                <button className='btn btn-outline btn-primary '>Place A Bid</button>
+                                {/* time */}
+                                <Time />
+
+                                {/* button  */}
+                                <div className='flex justify-evenly pt-5'>
+                                    <button className='btn btn-primary'>View Artwork</button>
+                                    <button className='btn btn-outline btn-primary '>Place A Bid</button>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="card w-96 bg-base-100 shadow-xl">
-                        <div class="card-body">
-                            <h2 class="card-title">Card title!</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
-                            <div class="card-actions justify-end">
-                                <button class="btn btn-primary">Buy Now</button>
-                            </div>
-                        </div>
-                    </div>
+                    {/* top creators */}
+                    <TopCreators />
 
                 </div>
             </div>
