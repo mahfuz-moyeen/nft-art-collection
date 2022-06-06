@@ -1,6 +1,9 @@
 import { HeartIcon } from '@heroicons/react/solid';
 import React from 'react';
 import History from './History';
+import dinosaur from '../../Image/dinosaur.jpg'
+import Crypto from '../../Image/Crypto.jpg'
+import wolf from '../../Image/wolf.png'
 
 const ArtCart = () => {
 
@@ -10,18 +13,21 @@ const ArtCart = () => {
             name: "Diamond Dinosaur",
             artist: "by Johnson Moss",
             bid: "0.42 ETH",
+            img:dinosaur
         },
         {
             id: 2,
             name: "Crypto Art Concept",
             artist: "by Ricky",
             bid: "0.15 ETH",
+            img:Crypto
         },
         {
             id: 3,
             name: "Colorful Wolf",
             artist: "by Johnson Moss",
             bid: "0.25 ETH",
+            img:wolf
         }
     ]
 
@@ -34,7 +40,7 @@ const ArtCart = () => {
                     <div className='relative'>
                         <HeartIcon className='w-5 h-5 text-base-100 absolute right-3 top-2' />
                         <figure className="p-1">
-                            <img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes" className="rounded-xl" />
+                            <img src={art.img} alt="Shoes" className="h-36 w-full rounded-xl" />
                         </figure>
                     </div>
 

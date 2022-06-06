@@ -1,40 +1,44 @@
 import React from 'react';
-
+import bigHead1 from '../../Image/user/bighead.svg'
+import bigHead2 from '../../Image/user/bighead-1.svg'
+import bigHead3 from '../../Image/user/bighead-2.svg'
+import bigHead4 from '../../Image/user/bighead-3.svg'
+import bigHead5 from '../../Image/user/bighead-4.svg'
 const TopCreators = () => {
     const creator = [
         {
             id: 1,
             name: "Riadul Raq",
             user: '@rakib',
-            img: "",
+            img: bigHead1,
             follow: false
         },
         {
             id: 2,
             name: "Jonshon",
             user: '@Jonshon',
-            img: "",
+            img: bigHead2,
             follow: false
         },
         {
             id: 3,
             name: "Afridi",
             user: '@afridi',
-            img: "",
+            img: bigHead3,
             follow: true
         },
         {
             id: 4,
             name: "Ricky Ponting",
             user: '@ponting42',
-            img: "",
+            img: bigHead4,
             follow: false
         },
         {
             id: 1,
             name: "Sakib Al",
             user: '@skib75',
-            img: "",
+            img: bigHead5,
             follow: true
         },
     ]
@@ -52,7 +56,7 @@ const TopCreators = () => {
                             <div className='flex gap-1'>
                                 <div className="avatar">
                                     <div className="w-16 rounded-full">
-                                        <img src="https://api.lorem.space/image/face?hash=92310" />
+                                        <img src={person.img} alt='user' className='bg-white' />
                                     </div>
                                 </div>
                                 <div>
