@@ -5,3 +5,4 @@
 * react router
 * react tailwind
 * daisyUI
+* heroicon

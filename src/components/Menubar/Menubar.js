@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-
+import bighead from '../../Image/user/bighead-10.svg';
 const Menubar = () => {
 
     const menuItem = <>
@@ -97,7 +97,7 @@ const Menubar = () => {
                 <div className="dropdown dropdown-end">
                     <label tabIndex="0" className="btn btn-ghost btn-circle avatar">
                         <div className="w-10 rounded-full">
-                            <img src="https://api.lorem.space/image/face?hash=33791" />
+                            <img src={bighead} />
                         </div>
                     </label>
                     <ul tabIndex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52 bg-secondary">
